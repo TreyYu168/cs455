@@ -1,4 +1,4 @@
 package overlay.wireformats;
 
-public class OverlayNodeReportsTaskFinished implements Protocol {
+public class OverlayNodeReportsTaskFinished {
 }

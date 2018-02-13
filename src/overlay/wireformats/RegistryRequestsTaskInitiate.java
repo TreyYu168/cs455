@@ -1,4 +1,4 @@
 package overlay.wireformats;
 
-public class RegistryRequestsTaskInitiate implements Protocol{
+public class RegistryRequestsTaskInitiate {
 }

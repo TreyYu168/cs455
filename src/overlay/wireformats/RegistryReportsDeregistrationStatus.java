@@ -1,4 +1,4 @@
 package overlay.wireformats;
 
-public class RegistryReportsDeregistrationStatus implements Protocol{
+public class RegistryReportsDeregistrationStatus{
 }

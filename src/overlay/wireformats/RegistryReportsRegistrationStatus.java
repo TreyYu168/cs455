@@ -1,5 +1,5 @@
 package overlay.wireformats;
 
-public class RegistryReportsRegistrationStatus implements Protocol{
+public class RegistryReportsRegistrationStatus {
 
 }
