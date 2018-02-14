@@ -1,6 +1,11 @@
 package overlay.wireformats;
 
+import java.io.IOException;
+
 public interface Event {
 
-    public byte[] getBytes();
+    byte[] getBytes() throws IOException;
+    byte getType();
+
+
 }
