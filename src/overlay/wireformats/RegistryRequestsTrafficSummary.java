@@ -6,15 +6,7 @@ public class RegistryRequestsTrafficSummary implements Event{
 
     final static byte messageType = 11;
 
-    /*public RegistryRequestsTrafficSummary(byte[] marshaledBytes) throws IOException{
-        ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(marshaledBytes);
-        DataInputStream dataInputStream = new DataInputStream(byteArrayInputStream);
-
-        byte type = dataInputStream.readByte();
-
-        dataInputStream.close();
-        byteArrayInputStream.close();
-    }*/
+    public RegistryRequestsTrafficSummary(){}
 
     @Override
     public byte[] getBytes() throws IOException {

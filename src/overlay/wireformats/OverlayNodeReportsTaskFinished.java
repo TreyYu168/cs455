@@ -36,7 +36,7 @@ public class OverlayNodeReportsTaskFinished implements Event{
         dataOutputStream.writeInt(nodeID);
 
         dataOutputStream.flush();
-        
+
         return byteArrayOutputStream.toByteArray();
     }
 

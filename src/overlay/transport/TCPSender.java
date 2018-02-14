@@ -4,7 +4,7 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 
-public class TCPSender {
+public class TCPSender implements Runnable{
     private Socket socket;
     private DataOutputStream dout;
 
@@ -18,5 +18,11 @@ public class TCPSender {
         dout.writeInt(dataLength);
         dout.write(data, 0, dataLength);
         dout.flush();
+    }
+
+
+    @Override
+    public void run() {
+        
     }
 }

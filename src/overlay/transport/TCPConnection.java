@@ -13,8 +13,13 @@ public class TCPConnection extends Thread{
         this.tcpSender = new TCPSender(socket);
     }
 
-    @Override
-    public void run() {
+    public void startSend()  {
+        Thread sendThread = new Thread(tcpSender);
+        sendThread.start();
+    }
 
+    public void startReceive() {
+        Thread receiveThread = new Thread(tcpReceiver);
+        receiveThread.start();
     }
 }

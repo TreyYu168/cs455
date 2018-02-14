@@ -9,7 +9,7 @@ public class RegistryReportsRegistrationStatus implements Event{
     private byte length;
     private byte[] info;
 
-    RegistryReportsRegistrationStatus(byte[] marshaledBytes) throws IOException{
+    public RegistryReportsRegistrationStatus(byte[] marshaledBytes) throws IOException{
         ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(marshaledBytes);
         DataInputStream dataInputStream = new DataInputStream(byteArrayInputStream);
 

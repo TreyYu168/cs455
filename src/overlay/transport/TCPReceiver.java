@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.net.Socket;
 import java.net.SocketException;
 
-public class TCPReceiver {
+public class TCPReceiver implements Runnable{
 
     private Socket socket;
     private DataInputStream din;
@@ -15,6 +15,7 @@ public class TCPReceiver {
         din = new DataInputStream(socket.getInputStream());
     }
 
+    @Override
     public void run() {
         int dataLength;
 
