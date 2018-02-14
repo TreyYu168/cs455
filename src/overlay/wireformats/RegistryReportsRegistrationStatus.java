@@ -1,7 +1,5 @@
 package overlay.wireformats;
 
-import com.sun.xml.internal.messaging.saaj.util.ByteOutputStream;
-
 import java.io.*;
 
 public class RegistryReportsRegistrationStatus implements Event{

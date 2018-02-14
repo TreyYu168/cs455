@@ -23,7 +23,6 @@ public class OverlayNodeSendsRegistration implements Event {
 
         byteArrayInputStream.close();
         dataInputStream.close();
-
     }
 
     @Override
@@ -35,6 +34,7 @@ public class OverlayNodeSendsRegistration implements Event {
         dataOutputStream.writeByte(messageType);
         dataOutputStream.writeByte(length);
         dataOutputStream.write(ip);
+        dataOutputStream.write(port);
 
         dataOutputStream.flush();
         marshaledBytes = byteArrayOutputStream.toByteArray();
